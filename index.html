@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT Блог</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <a href="#" class="header__logo">
+            <img
+              src="public/img/Group18.svg"
+              alt="Логотип компании"
+              class="header__logo-img"
+            />
+          </a>
+          <button class="burger-menu" id="burgerMenu">
+            <span></span>
+          </button>
+          <ul class="header__menu" id="headerMenu">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link header__menu-link--active"
+                >Главная</a
+              >
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">О нас</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Контакты</a>
+            </li>
+            <li class="header__menu-item">
+              <button
+                class="header__menu-link header__search-btn"
+                id="searchBtn"
+              >
+                Поиск
+              </button>
+            </li>
+            <li class="header__menu-item">
+              <a href="tel:+79878887887" class="header__phone"
+                >+7 (987) 887-87</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="search-panel" id="searchPanel">
+          <div class="container">
+            <div class="search-panel__content">
+              <div class="search-panel__input-wrapper">
+                <input
+                  type="text"
+                  class="search-panel__input"
+                  placeholder="Что вы ищете?"
+                  id="searchInput"
+                />
+                <div class="search-panel__results">
+                  <div class="search-panel__result">
+                    <a href="#" class="search-panel__result-link">
+                      <h3 class="search-panel__result-title">
+                        Управление ИТ-активами — скучная рутина или творческая
+                        задача?
+                      </h3>
+                      <time class="search-panel__result-date">13 дек 2020</time>
+                    </a>
+                  </div>
+                  <div class="search-panel__result">
+                    <a href="#" class="search-panel__result-link">
+                      <h3 class="search-panel__result-title">
+                        Управление или движение
+                      </h3>
+                      <time class="search-panel__result-date">10 дек 2020</time>
+                    </a>
+                  </div>
+                  <div class="search-panel__result">
+                    <a href="#" class="search-panel__result-link">
+                      <h3 class="search-panel__result-title">
+                        Управленческие навыки
+                      </h3>
+                      <time class="search-panel__result-date">05 ноя 2020</time>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <button class="search-panel__button">Найти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="hero__image"></div>
+      </section>
+
+      <section class="articles">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="articles__list">
+                <article class="article-card">
+                  <div class="article-card__header">
+                    <div class="article-card__category">Категория 1</div>
+                    <time class="article-card__date">13 дек 2020</time>
+                  </div>
+                  <h2 class="article-card__title">
+                    <a href="#"
+                      >Управление ИТ-активами — скучная рутина или творческая
+                      задача?</a
+                    >
+                  </h2>
+                  <p class="article-card__excerpt">
+                    Размышляя об управлении ИТ-активами, я вспомнил один учебный
+                    пример. Менеджер по ИТ-мощностям в крупной компании
+                    периодически готовил толстенный отчёт руководству. В
+                    очередной раз он не принёс отчёт, решив проверить, нужен ли
+                    он вообще.
+                  </p>
+                </article>
+
+                <div class="article-cards-container">
+                  <article class="article-card">
+                    <div class="article-card__header">
+                      <div class="article-card__category">Категория 1</div>
+                      <time class="article-card__date">13 дек 2020</time>
+                    </div>
+                    <h2 class="article-card__title">
+                      <a href="#"
+                        >Управление ИТ-активами — скучная рутина или творческая
+                        задача?</a
+                      >
+                    </h2>
+                    <p class="article-card__excerpt">
+                      Размышляя об управлении ИТ-активами, я вспомнил один
+                      учебный пример. Менеджер по ИТ-мощностям в крупной
+                      компании периодически готовил толстенный отчёт
+                      руководству. В очередной раз он не принёс отчёт, решив
+                      проверить, нужен ли он вообще.
+                    </p>
+                  </article>
+
+                  <article
+                    class="article-card article-card--small article-card--featured"
+                  >
+                    <div class="article-card__content">
+                      <div class="article-card__category">Категория 1</div>
+                      <h2 class="article-card__title">
+                        <a href="#">ITAM&SAMDay – самая настоящая удача!</a>
+                      </h2>
+                    </div>
+                    <time class="article-card__date">13 дек 2020</time>
+                  </article>
+                </div>
+
+                <div class="article-cards-row">
+                  <article class="article-card article-card--with-image">
+                    <div class="article-card__content">
+                      <div class="article-card__category">
+                        Очень длинная категория 2
+                      </div>
+                      <h2 class="article-card__title">
+                        <a href="#"
+                          >Управление ИТ-активами – скучная рутина или
+                          творческая задача?</a
+                        >
+                      </h2>
+                    </div>
+
+                    <time class="article-card__date">13 дек 2020</time>
+                  </article>
+
+                  <div class="article-cards-column">
+                    <article class="article-card article-card--small">
+                      <div class="article-card__header">
+                        <div class="article-card__category">Категория 1</div>
+                        <time class="article-card__date">13 дек 2020</time>
+                      </div>
+                      <h2 class="article-card__title">
+                        <a href="#"
+                          >Управление ИТ-активами — скучная рутина или
+                          творческая задача слово слово и еще длинное слово
+                          после чего ...</a
+                        >
+                      </h2>
+                    </article>
+
+                    <article class="article-card article-card--small">
+                      <div class="article-card__header">
+                        <div class="article-card__category">Категория 1</div>
+                        <time class="article-card__date">13 дек 2020</time>
+                      </div>
+                      <h2 class="article-card__title">
+                        <a href="#">ITAM&SAMDay – самая настоящая удача!</a>
+                      </h2>
+                    </article>
+                  </div>
+                </div>
+                <div class="article-cards-container">
+                  <article class="article-card">
+                    <div class="article-card__header">
+                      <div class="article-card__category">Категория 1</div>
+                      <time class="article-card__date">13 дек 2020</time>
+                    </div>
+                    <h2 class="article-card__title">
+                      <a href="#"
+                        >Управление ИТ-активами — скучная рутина или творческая
+                        задача?</a
+                      >
+                    </h2>
+                    <p class="article-card__excerpt">
+                      Размышляя об управлении ИТ-активами, я вспомнил один
+                      учебный пример. Менеджер по ИТ-мощностям в крупной
+                      компании периодически готовил толстенный отчёт
+                      руководству. В очередной раз он не принёс отчёт, решив
+                      проверить, нужен ли он вообще.
+                    </p>
+                  </article>
+
+                  <article
+                    class="article-card article-card--small article-card--featured"
+                  >
+                    <div class="article-card__content">
+                      <div class="article-card__category">Категория 1</div>
+                      <h2 class="article-card__title">
+                        <a href="#">ITAM&SAMDay – самая настоящая удача!</a>
+                      </h2>
+                    </div>
+                    <time class="article-card__date">13 дек 2020</time>
+                  </article>
+                </div>
+
+                <div class="article-cards-row">
+                  <article class="article-card article-card--with-image second">
+                    <div class="article-card__content">
+                      <div class="article-card__category">
+                        Очень длинная категория 2
+                      </div>
+                      <h2 class="article-card__title">
+                        <a href="#"
+                          >Управление ИТ-активами — скучная рутина или
+                          творческая задача?</a
+                        >
+                      </h2>
+                    </div>
+
+                    <time class="article-card__date">13 дек 2020</time>
+                  </article>
+
+                  <div class="article-cards-column">
+                    <article class="article-card article-card--small">
+                      <div class="article-card__header">
+                        <div class="article-card__category">Категория 1</div>
+                        <time class="article-card__date">13 дек 2020</time>
+                      </div>
+                      <h2 class="article-card__title">
+                        <a href="#"
+                          >Управление ИТ-активами — скучная рутина или
+                          творческая задача слово слово и еще длинное слово
+                          после чего ...</a
+                        >
+                      </h2>
+                    </article>
+
+                    <article class="article-card article-card--small">
+                      <div class="article-card__header">
+                        <div class="article-card__category">Категория 1</div>
+                        <time class="article-card__date">13 дек 2020</time>
+                      </div>
+                      <h2 class="article-card__title">
+                        <a href="#">ITAM&SAMDay – самая настоящая удача!</a>
+                      </h2>
+                    </article>
+                  </div>
+                </div>
+              </div>
+
+              <nav class="pagination" aria-label="Навигация по страницам">
+                <ul class="pagination__list">
+                  <li class="pagination__item">
+                    <a
+                      href="#"
+                      class="pagination__link pagination__link--active"
+                      >1</a
+                    >
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">2</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">3</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">4</a>
+                  </li>
+                  <li class="pagination__item pagination__item--dots">...</li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link">10</a>
+                  </li>
+                  <li class="pagination__item">
+                    <a href="#" class="pagination__link pagination__link--next"
+                      >Показать еще 6</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col-lg-4">
+              <aside class="sidebar">
+                <div class="sidebar__block">
+                  <h3 class="sidebar__title">Популярные новости</h3>
+                  <div class="sidebar__news-list">
+                    <article class="news-card">
+                      <h4 class="news-card__title">
+                        <a href="#">ITAM&SAMDay – самая настоящая удача!</a>
+                      </h4>
+                      <time class="news-card__date">13 дек 2020</time>
+                    </article>
+                    <article class="news-card">
+                      <h4 class="news-card__title">
+                        <a href="#"
+                          >Секреты лицензирования. Всё, что вы хотели знать про
+                          Microsoft, SAP и Oracle, но не знали, у кого
+                          спросить...</a
+                        >
+                      </h4>
+                      <time class="news-card__date">10 дек 2020</time>
+                    </article>
+                    <article class="news-card">
+                      <h4 class="news-card__title">
+                        <a href="#"
+                          >Менеджмент XXI века. Надо ли готовиться к изменениям
+                          или мы давно уже должны были измениться?</a
+                        >
+                      </h4>
+                      <time class="news-card__date">5 дек 2020</time>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="sidebar__block">
+                  <h3 class="sidebar__title">Подписка на рассылку</h3>
+                  <form class="subscribe-form">
+                    <input
+                      type="email"
+                      class="subscribe-form__input"
+                      placeholder="Email@gmail.com"
+                    />
+                    <button type="submit" class="subscribe-form__button">
+                      Подписаться
+                      <img
+                        src="public/img/right-arrow 1.svg"
+                        alt="Стрелка"
+                        class="subscribe-form__button-icon"
+                      />
+                    </button>
+                  </form>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <a href="/" class="footer__logo">
+            <img src="public/img/Group18.svg" alt="Логотип компани" />
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Галерея</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Новости</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__copyright">
+            ООО "Организация" 2020. Все права защищены
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
